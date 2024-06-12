@@ -20,10 +20,10 @@
         </div>
 
         <ul class="nav-links">
-            <li class="link"><a href="#">Home</a></li>
-            <li id="link1" class="link"><a href="#features">Features</a></li>
-            <li id="link2" class="link"><a href="#pricing-plans">Pricing</a></li>
-            <li id="link" class="link"><a href="aboutme/index.html">About</a></li>
+            <li class="link"><a href="" onclick="removeHash()">Home</a></li>
+            <li id="link1" class="link"><a href="#features" onclick="scrollToSection('features')">Features</a></li>
+            <li id="link2" class="link"><a href="#pricing-plans" onclick="scrollToSection('pricing-plans')">Pricing</a></li>
+            <li id="link" class="link"><a href="./aboutme">About</a></li>
         </ul>
         <button class="btn" onclick="contactWhatsApp()">Hire Me</button>
     </nav>
@@ -35,9 +35,10 @@
             <h4></h4>
             <H1>Hi, I'm <span>Althaf</span>, Samp Developer</H1>
             <p>
-                Community ini saya bangun untuk membantu kalian yang suka bermain gta samp roleplay dan saya menjual kebutuhan-kebutuhan samp
+                Hallo, Community ini saya bangun untuk membantu kalian yang suka bermain gta samp roleplay dan saya juga menjual kebutuhan kebutuhan samp
                 seperti filterscript, textdraw, gamemode, RDP dll dan bukan hanya menjual saja akan tetapi saya memberikan jasa untuk kalian yang kesusahan dalam memasang filterscript
-                textdraw gamemode dll seperti jasa fix bug jasa pasang textdraw jasa pasang mapingan jasa pasang filterscript dan juga jasa review server buat kalian yang ingin mengembangkan server kalian
+                textdraw gamemode dll seperti jasa fix bug jasa pasang textdraw jasa pasang mapingan jasa pasang filterscript dan juga jasa review server buat kalian yang ingin mengembangkan server kalian.
+                Jika kalian ingin informasi lebih lanjut silahkan untuk scroll kebawah dan temukan social media saya disana atau juga bisa join discord community saya juga agar mengetahui informasi lainnya lebih lanjut.
             </p>
             <button class="btn" onclick="scrollToFeatures()">Get Started</button>
         </div>
@@ -84,7 +85,7 @@
         </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="pricing-plans">
         <h2 class="header">PROJECT PRICING PLANS</h2>
         <p class="sub-header">
             Paket harga hadir dengan berbagai tingkatan keanggotaan, masing-masing disesuaikan untuk memenuhi proyek dan proyek yang berbeda
@@ -166,7 +167,7 @@
                 <img src="images/logoalthaf.png">
             </div>
             <p>
-                Althaf Community | Sebuah Community Gta Samp Roleplay
+                Althaf SAMP | Community Gta Samp Roleplay
             </p>
             <div class="socials">
                 <a href="https://www.youtube.com/@althafsamp18" target="_blank"><i class="ri-youtube-line"></i></a>
@@ -175,8 +176,8 @@
             </div>
         </div>
         <div class="column">
-            <h4>About Us</h4>
-            <a href="aboutme/index.html">Blogs</a>
+            <h4>About Me</h4>
+            <a href="./aboutme">Blogs</a>
             <a href="https://www.youtube.com/@althafsamp18" target="_blank">Channels</a>
             <a href="#">Sponsors</a>
         </div>
@@ -193,9 +194,7 @@
     </div>
 
     <script>
-        function scrollToFeatures() {
-            document.getElementById('features').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-        }
+        
     </script>
     <script src="script.js"></script>
 </body>

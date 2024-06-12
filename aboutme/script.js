@@ -99,3 +99,9 @@ document.addEventListener('DOMContentLoaded', function() {
         window.open(whatsappUrl, '_blank');  // Membuka WhatsApp di tab baru
     });
 });
+
+// Menghapus 'index.html' dari URL jika ada
+if (window.location.pathname.endsWith('index.html')) {
+    const newPath = window.location.pathname.replace('index.html', '');
+    window.history.replaceState({}, '', newPath);
+}

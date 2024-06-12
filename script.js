@@ -64,7 +64,7 @@ function orderFixBugs() {
 
 function orderTextDraw() {
     var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
-    var message = 'Halo, saya tertarik untuk memesan jasa TextDraw Samp. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var message = 'Halo, saya tertarik untuk memesan jasa pemasangan TextDraw Samp. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
     var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
@@ -78,31 +78,40 @@ function orderMapping() {
 
 function orderFilterScript() {
     var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
-    var message = 'Halo, saya tertarik untuk memesan Filter Script. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var message = 'Halo, saya tertarik untuk memesan Filter Script Anda. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
     var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
 
 function orderTextdraw() {
     var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
-    var message = 'Halo, saya tertarik untuk memesan Filter Script. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var message = 'Halo, saya tertarik untuk memesan Textdraw Anda. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
     var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
 
 function orderGamemode() {
     var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
-    var message = 'Halo, saya tertarik untuk memesan Filter Script. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var message = 'Halo, saya tertarik untuk memesan Gamemode Anda. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
     var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
 
-document.getElementById('aboutLink').addEventListener('click', function(event) {
-    event.preventDefault();
-    window.location.href = 'aboutme/';
-});
+function scrollToFeatures() {
+    document.getElementById('features').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+}
+
+function removeHash() {
+    history.pushState("", document.title, window.location.pathname + window.location.search);
+}
+
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    removeHash();
+}
 
 // Menghapus 'index.html' dari URL jika ada
-if (window.location.pathname.endsWith('/index.html')) {
-    window.history.replaceState({}, '', window.location.pathname.replace('/index.html', '/'));
+if (window.location.pathname.endsWith('index.html')) {
+    const newPath = window.location.pathname.replace('index.html', '');
+    window.history.replaceState({}, '', newPath);
 }
