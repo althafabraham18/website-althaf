@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Althaf Community</title>
+    <link rel="icon" href="images/picdev.png" type="image/x-icon">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <li class="link"><a href="#">Home</a></li>
             <li id="link1" class="link"><a href="#features">Features</a></li>
             <li id="link2" class="link"><a href="#pricing-plans">Pricing</a></li>
-            <li id="link3" class="link"><a href="#">About</a></li>
+            <li id="link" class="link"><a href="aboutme/index.html">About</a></li>
         </ul>
         <button class="btn" onclick="contactWhatsApp()">Hire Me</button>
     </nav>
@@ -34,7 +35,7 @@
             <h4></h4>
             <H1>Hi, I'm <span>Althaf</span>, Samp Developer</H1>
             <p>
-                Community ini saya bangun untuk membantu kalian yang suka bermain gta samp roleplay dan menjual kebutuhan-kebutuhan samp
+                Community ini saya bangun untuk membantu kalian yang suka bermain gta samp roleplay dan saya menjual kebutuhan-kebutuhan samp
                 seperti filterscript, textdraw, gamemode, RDP dll dan bukan hanya menjual saja akan tetapi saya memberikan jasa untuk kalian yang kesusahan dalam memasang filterscript
                 textdraw gamemode dll seperti jasa fix bug jasa pasang textdraw jasa pasang mapingan jasa pasang filterscript dan juga jasa review server buat kalian yang ingin mengembangkan server kalian
             </p>
@@ -52,33 +53,33 @@
                 <span><i class="ri-money-dollar-box-line"></i></span>
                 <h4>Filter-Script</h4>
                 <p>
-                    Jika kamu ingin memperbagus server kamu kami siap untuk memberikan filterscript terbaik untuk server kamu.
+                    Jika kamu memiliki masalah dalam memasang filterscript saya siap membantu kamu.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a href="#" onclick="orderFilterScript()">Order Now <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
                 <span><i class="ri-bug-line"></i></span>
                 <h4>Fix Your Bugs</h4>
                 <p>
-                    Kamu memiliki masalah dengan kode Anda? Katakan pada saya, saya akan membantumu memperbaikinya.
+                    Kamu memiliki masalah dengan kode kamu? saya akan membantumu memperbaikinya.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a href="#" onclick="orderFixBugs()">Order Now <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
                 <span><i class="ri-history-line"></i></span>
                 <h4>TextDraw Samp</h4>
                 <p>
-                    Jika kamu ingin mempercantik server kamu dengan menambhkan textdraw kedalam nya kami siap membantu kamu!.
+                    Jika kamu tidak tahu cara memasang textdraw kedalam server kamu saya siap membantu kamu!.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a href="#" onclick="orderTextDraw()">Order Now <i class="ri-arrow-right-line"></i></a>
             </div>
             <div class="card">
                 <span><i class="ri-shake-hands-line"></i></span>
                 <h4>Pasang Mapping</h4>
                 <p>
-                    Jika kamu tidak tahu cara memasang mapping kedalam server kamu kami siap membantu kamu.
+                    Jika kamu tidak tahu cara memasang mapping kedalam server kamu saya siap membantu kamu.
                 </p>
-                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <a href="#" onclick="orderMapping()">Order Now <i class="ri-arrow-right-line"></i></a>
             </div>
         </div>
     </section>
@@ -86,70 +87,73 @@
     <section class="container">
         <h2 class="header">PROJECT PRICING PLANS</h2>
         <p class="sub-header">
-            Paket harga kami hadir dengan berbagai tingkatan keanggotaan, masing-masing disesuaikan untuk memenuhi proyek dan proyek yang berbeda
-            jenis kode kelas+.
+            Paket harga hadir dengan berbagai tingkatan keanggotaan, masing-masing disesuaikan untuk memenuhi proyek dan proyek yang berbeda
+            jenis kode kelas+ atau tingkat kesusahannya.
         </p>
         <div class="pricing">
             <div class="card">
                 <div class="content">
-                    <h4>Basic Plan</h4>
-                    <h3>0$</h3>
+                    <img src="images/comingsoon.png" alt="">
+                    <h4>FilterScript</h4>
+                    <h3>5$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Smart coding plan
+                        Sistem Asuransi + texdraw
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        At home workouts
+                        Sistem kick + textdraw
                     </p>
                 </div>
-                <button class="btn">Join Now</button>
+                <button class="btn" onclick="orderFilterScript()">Order Now</button>
             </div>
             <div class="card">
                 <div class="content">
-                    <h4>Gold Plan</h4>
+                    <img src="images/comingsoon.png" alt="">
+                    <h4>TextdDraw</h4>
                     <h3>10$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Pro codes
+                        Coming Soon
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Smart coding plan
+                        Coming Soon
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        At home workouts
+                        Coming Soon
                     </p>
                 </div>
-                <button class="btn">Join Now</button>
+                <button class="btn" onclick="orderTextdraw()">Order Now</button>
             </div>
             <div class="card">
                 <div class="content">
-                    <h4>Diamond Plan</h4>
+                    <img src="images/comingsoon.png" alt="">
+                    <h4>Gamemode</h4>
                     <h3>100$</h3>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Elite Classes & Courses
+                        Coming Soon
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Pro codes
+                        Coming Soon
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Personal Coaching
+                        Coming Soon
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        Smart coding plan
+                        Coming Soon
                     </p>
                     <p>
                         <i class="ri-checkbox-circle-line"></i>
-                        At home workouts
+                        Coming Soon
                     </p>
                 </div>
-                <button class="btn">Join Now</button>
+                <button class="btn" onclick="orderGamemode()">Order Now</button>
             </div>
         </div>
     </section>
@@ -159,10 +163,10 @@
         <span class="blur"></span>
         <div class="column">
             <div class="logo">
-                <img src="images/logo.png">
+                <img src="images/logoalthaf.png">
             </div>
             <p>
-                Perusahaan itu sendiri adalah perusahaan yang sangat sukses.
+                Althaf Community | Sebuah Community Gta Samp Roleplay
             </p>
             <div class="socials">
                 <a href="https://www.youtube.com/@althafsamp18" target="_blank"><i class="ri-youtube-line"></i></a>
@@ -171,15 +175,9 @@
             </div>
         </div>
         <div class="column">
-            <h4>Company</h4>
-            <a href="#">Business</a>
-            <a href="#">Partnership</a>
-            <a href="#">Network</a>
-        </div>
-        <div class="column">
             <h4>About Us</h4>
-            <a href="#">Blogs</a>
-            <a href="#">Channels</a>
+            <a href="aboutme/index.html">Blogs</a>
+            <a href="https://www.youtube.com/@althafsamp18" target="_blank">Channels</a>
             <a href="#">Sponsors</a>
         </div>
         <div class="column">
@@ -191,7 +189,7 @@
     </footer>
 
     <div class="copyright">
-        Copyright © 2023 Althaf Abraham. All Rights Reserved.
+        Copyright © 2022 Althaf Abraham. All Rights Reserved.
     </div>
 
     <script>

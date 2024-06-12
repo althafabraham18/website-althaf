@@ -47,3 +47,52 @@ function contactUsViaWhatsApp() {
     var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
+
+function orderFilterScript() {
+    var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
+    var message = 'Halo, saya tertarik untuk memesan jasa pasang Filter-Script. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+function orderFixBugs() {
+    var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
+    var message = 'Halo, saya tertarik untuk menggunakan jasa Anda dalam memperbaiki bug. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+function orderTextDraw() {
+    var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
+    var message = 'Halo, saya tertarik untuk memesan jasa TextDraw Samp. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+function orderMapping() {
+    var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
+    var message = 'Halo, saya tertarik untuk memesan jasa Pasang Mapping. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+function orderFilterScript() {
+    var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
+    var message = 'Halo, saya tertarik untuk memesan Filter Script. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+function orderTextdraw() {
+    var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
+    var message = 'Halo, saya tertarik untuk memesan Filter Script. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
+
+function orderGamemode() {
+    var phoneNumber = '6285921918260'; // Ganti dengan nomor telepon yang diinginkan
+    var message = 'Halo, saya tertarik untuk memesan Filter Script. Mohon informasi lebih lanjut.'; // Pesan yang ingin dikirim
+    var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+}
