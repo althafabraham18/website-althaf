@@ -96,3 +96,13 @@ function orderGamemode() {
     var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
+
+document.getElementById('aboutLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    window.location.href = 'aboutme/';
+});
+
+// Menghapus 'index.html' dari URL jika ada
+if (window.location.pathname.endsWith('/index.html')) {
+    window.history.replaceState({}, '', window.location.pathname.replace('/index.html', '/'));
+}
