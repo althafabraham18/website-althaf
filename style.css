@@ -382,3 +382,28 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+
+/* Tambahkan ini ke file style.css Anda */
+
+/* Atur ulang kolom di footer untuk tampilan ponsel */
+@media (max-width: 768px) {
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .column {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .column:nth-child(2) {
+        order: 3; /* Pindahkan "About Me" ke bawah */
+    }
+
+    footer .column:nth-child(3) {
+        order: 2; /* Pindahkan "Contact" ke atas */
+    }
+}

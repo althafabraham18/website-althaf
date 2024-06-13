@@ -25,7 +25,7 @@
             <li id="link2" class="link"><a href="#pricing-plans" onclick="scrollToSection('pricing-plans')">Pricing</a></li>
             <li id="link" class="link"><a href="./aboutme">About</a></li>
         </ul>
-        <button class="btn" onclick="contactWhatsApp()">Hire Me</button>
+        <button class="btn" onclick="contactWhatsApp()">Contact Me</button>
     </nav>
 
     <header class="container">
@@ -194,7 +194,9 @@
     </div>
 
     <script>
-        
+    function scrollToFeatures() {
+        document.getElementById('features').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    }   
     </script>
     <script src="script.js"></script>
 </body>

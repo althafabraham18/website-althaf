@@ -97,10 +97,6 @@ function orderGamemode() {
     window.open(whatsappUrl, '_blank');
 }
 
-function scrollToFeatures() {
-    document.getElementById('features').scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-}
-
 function removeHash() {
     history.pushState("", document.title, window.location.pathname + window.location.search);
 }
