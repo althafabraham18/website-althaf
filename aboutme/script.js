@@ -88,3 +88,20 @@ window.addEventListener('scroll', function () {
         scrollTopButton.style.display = 'none';
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var hireMeLink = document.getElementById('hireMeLink');
+    hireMeLink.addEventListener('click', function(event) {
+        event.preventDefault();  // Mencegah link melakukan navigasi
+        var phoneNumber = '';  // Ganti dengan nomor telepon yang diinginkan
+        var message = 'Halo, saya tertarik untuk menggunakan jasa Anda. Bisakah kita berdiskusi lebih lanjut?';  // Pesan yang ingin dikirim
+        var whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(whatsappUrl, '_blank');  // Membuka WhatsApp di tab baru
+    });
+});
+
+// Menghapus 'index.html' dari URL jika ada
+if (window.location.pathname.endsWith('index.html')) {
+    const newPath = window.location.pathname.replace('index.html', '');
+    window.history.replaceState({}, '', newPath);
+}
